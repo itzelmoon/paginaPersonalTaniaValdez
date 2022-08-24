@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Space+Mono&family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  color: #F2CDF1;
+}
+a:link {
+  color: #F2CDF1;
+  text-decoration: none;
+}
+a:visited {
+  color: #F2CDF1;
+}
+
+h4 {
+  color: #FF7F96;
+font-family: 'Space Mono';}
+
+body {
+  background: rgb(179,122,251);
+  background: linear-gradient(111deg, rgba(179,122,251,1) 2%, rgba(89,13,166,1) 15%, rgba(1,1,4,1) 40%, rgba(7,2,43,1) 61%, rgba(16,81,134,1) 86%, rgba(89,164,191,1) 98%);
+  background-attachment: fixed;
+}
+
+main {
+  padding: 0px;
+  margin-top: 7em;
+  height: fit-content;
+  top: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin-top: 0;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+}
+li {
+  margin: 3%;
+}
+
+ul ul {
+  position: relative;
+  display: none;
+}
+
+ul li:hover ul {
+  display: block;
+  display: grid;
+}
+
+ul li ul {
+  display: none;
+  display: table-column;
+  margin-right: 0px;
+}
+
+h1 {
+  padding: 1em;
+  font-family: 'Space Mono', monospace;
+  font-weight: 200;color: #F2CDF1;
+font-size: 3EM;}
+p {
+  color: black;
+}
+
+footer {
+  background-color: #0f0018;
+  height: 9em;
+  position: sticky;
+  
+}
+
+footer img {
+  height: 1.5em;
+}
+
+section {
+  height: 100vh;
+  width: auto;
+}
+
+section#sec1 {
+  width: 100%;
+  height: 100vh;
+}
+
+section#sec2 {
+  width: 100%;
+  height: 100vh;
+}
+
+section#sec3 {
+  width: 100%;
+  height: 100vh;
+}
+
+section#sec4 {
+  width: 100%;
+  height: 100vh;
+}
+
+main p{
+  font-family: 'Fira Code', monospace;
+  color: #FFE6CD;
+  }
+
+form {
+  display: flex;
+  justify-content: right;
+} 
+
+.menu li {
+  margin: 0px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 3%;
+  position: relative;
+  font-size: 1.1em;
+  border: 2px;
+  border-right-style: ridge;
+  border-right-color: #ffffff;
+  padding-right: 3%;
+text-transform: uppercase;}
+
+.grid {
+  display: grid; 
+  height: 100vh;grid-auto-flow: row dense; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.2fr 1fr 0.2fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "cabecera"
+    "contenido"
+    "pie"; 
+}
+.cabecera { grid-area: cabecera; }
+.contenido { grid-area: contenido; }
+.pies { grid-area: pie; }
+
+.cabecera {
+  display: grid; 
+  grid-auto-flow: row dense; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr .5fr; 
+  grid-template-rows: .3fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "menu barra"; 
+margin: 2em 4em 2em 4em;}
+
+.menu { grid-area: menu; }
+.barra { grid-area: barra; align-items: center;}
+
+
+.contenido {
+  display: grid; 
+  grid-auto-flow: row dense; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "izquierda derecha"; 
+}
+.izquierda { grid-area: izquierda; }
+.derecha { grid-area: derecha; }
+
+.pie {
+  display: grid; 
+  grid-auto-flow: row dense; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr .4fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "menu volver"; 
+}
+.menu { grid-area: menu; font-family: 'VT323', monospace;}
+.volver { grid-area: volver; }
+
+
+img.imgEjemplo {
+  width: 26em;
+}
+
+img.imgLogo {
+  width: 2.3em;
+}
+
